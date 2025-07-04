@@ -1,0 +1,48 @@
+{
+  "resources/js/app.js": {
+    "file": "main.js",
+    "name": "main",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "main.css"
+    ],
+    "assets": [
+      "ok-beep.mp3",
+      "error.mp3",
+      "fonts/telecripto.ttf",
+      "images/setting-Cb7hU-GI.png",
+      "images/pos-BVm0Jm_r.jpg",
+      "images/inventory-CA57DuKr.png",
+      "images/inscribase-83SyZAMk.png"
+    ]
+  },
+  "resources/js/components/dashboard/sounds/error.mp3": {
+    "file": "error.mp3",
+    "src": "resources/js/components/dashboard/sounds/error.mp3"
+  },
+  "resources/js/components/dashboard/sounds/ok-beep.mp3": {
+    "file": "ok-beep.mp3",
+    "src": "resources/js/components/dashboard/sounds/ok-beep.mp3"
+  },
+  "resources/static/fonts/telecripto.ttf": {
+    "file": "fonts/telecripto.ttf",
+    "src": "resources/static/fonts/telecripto.ttf"
+  },
+  "resources/static/icon/inscribase.png": {
+    "file": "images/inscribase-83SyZAMk.png",
+    "src": "resources/static/icon/inscribase.png"
+  },
+  "resources/static/icon/inventory.png": {
+    "file": "images/inventory-CA57DuKr.png",
+    "src": "resources/static/icon/inventory.png"
+  },
+  "resources/static/icon/pos.jpg": {
+    "file": "images/pos-BVm0Jm_r.jpg",
+    "src": "resources/static/icon/pos.jpg"
+  },
+  "resources/static/icon/setting.png": {
+    "file": "images/setting-Cb7hU-GI.png",
+    "src": "resources/static/icon/setting.png"
+  }
+}
