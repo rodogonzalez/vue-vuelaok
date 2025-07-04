@@ -71,7 +71,8 @@ onMounted(() => {
             <h2>{{ country.part.name }}</h2>
 
             <div class="container px-4 py-5">
-                {{ country.part.description }}
+                <div v-html:="country.part.description"></div>
+
                 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                     <div class="col" v-for="picture in country.part.pictures" >
 
@@ -79,6 +80,16 @@ onMounted(() => {
 
                     </div>
                 </div>
+
+
+                <div class="col" v-for="video in country.part.videos">
+                    <iframe width="560" height="315" :src="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                </div>
+
+
+
 
                 <div class="row row-cols-1 row-cols-lg-5 align-items-stretch g-4 py-5">
                     <div class="col" v-for="item in country.part.destinations" v-bind:key="item.name">

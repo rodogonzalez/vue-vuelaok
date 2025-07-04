@@ -78,7 +78,13 @@ onMounted(() => {
             <a :href="'/' + props.country_slug + '/' + props.part_slug"><h2>{{ country.part.name }}</h2></a>
 
             <h3>{{ country.destination.name}}</h3>
+            <div v-html="country.destination.description"></div>
 
+            <div class="col" v-for="video in country.destination.videos">
+                <iframe width="560" height="315" :src="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+            </div>
 
 
         </div>
